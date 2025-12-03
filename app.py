@@ -27,13 +27,13 @@ def create_input_form():
         
         location_setting = st.selectbox(
             "Lokasi Pengaturan (Location Setting)",
-            options=["Inpatient", "Outpatient", "Emergency", "Unknown"],
+            options=["Inpatient", "Outpatient", "Emergency", "procedural"],
             help="Lokasi pemeriksaan dilakukan"
         )
         
         race_ethnicity = st.selectbox(
             "Ras/Etnis (Race/Ethnicity)",
-            options=["Asian", "White", "Black", "Hispanic", "Other", "Unknown"],
+            options=["Asian", "White", "Black", "Hispanic", "Unknown", "Other"],
             help="Pilih ras/etnis pasien"
         )
         
@@ -347,6 +347,7 @@ def create_input_form():
 
 if __name__ == "__main__":
     create_input_form()
+
 
 
 
