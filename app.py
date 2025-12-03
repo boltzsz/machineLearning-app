@@ -21,7 +21,7 @@ def create_input_form():
         # Fitur kategorikal - Demografi
         sex = st.selectbox(
             "Jenis Kelamin (Sex)",
-            options=["Male", "Female", "Other", "Unknown"],
+            options=["Male", "Female"],
             help="Pilih jenis kelamin pasien"
         )
         
@@ -347,6 +347,7 @@ def create_input_form():
 
 if __name__ == "__main__":
     create_input_form()
+
 
 
 
