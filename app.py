@@ -186,26 +186,26 @@ def create_input_form():
             # Fitur kategorikal - Gangguan Katup
             aortic_stenosis_value = st.selectbox(
                 "Aortic Stenosis",
-                options=["None", "Mild", "Moderate", "Severe", "Unknown"],
+                options=["None", "Mild", "Moderate", "Severe", "presumed none"],
                 help="Tingkat aortic stenosis"
             )
             
             aortic_regurgitation_value = st.selectbox(
                 "Aortic Regurgitation",
-                options=["None", "Mild", "Moderate", "Severe", "Unknown"],
+                options=["None", "Mild", "Moderate", "Severe", "presumed none"],
                 help="Tingkat aortic regurgitation"
             )
             
             mitral_regurgitation_value = st.selectbox(
                 "Mitral Regurgitation",
-                options=["None", "Mild", "Moderate", "Severe", "Unknown"],
+                options=["None", "Mild", "Moderate", "Severe", "presumed none"],
                 help="Tingkat mitral regurgitation"
             )
         
         with col6:
             tricuspid_regurgitation_value = st.selectbox(
                 "Tricuspid Regurgitation",
-                options=["None", "Mild", "Moderate", "Severe", "Unknown"],
+                options=["None", "Mild", "Moderate", "Severe", "presumed none"],
                 help="Tingkat tricuspid regurgitation"
             )
             
@@ -222,13 +222,13 @@ def create_input_form():
             # Fitur kategorikal - Fungsi dan Efusi
             rv_systolic_function_value = st.selectbox(
                 "RV Systolic Function",
-                options=["Normal", "Mild Dysfunction", "Moderate Dysfunction", "Severe Dysfunction", "Unknown"],
+                options=["Normal", "mildly_reduced", "moderately_reduced", "severely_reduced"],
                 help="Tingkat fungsi sistolik ventrikel kanan"
             )
             
             pericardial_effusion_value = st.selectbox(
                 "Pericardial Effusion",
-                options=["None", "Small", "Moderate", "Large", "Unknown"],
+                options=["None", "Small", "Moderate", "Large", "trace"],
                 help="Tingkat pericardial effusion"
             )
         
@@ -347,6 +347,7 @@ def create_input_form():
 
 if __name__ == "__main__":
     create_input_form()
+
 
 
 
